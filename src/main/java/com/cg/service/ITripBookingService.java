@@ -10,7 +10,7 @@ public interface ITripBookingService {
 	public TripBookingDto insertTripBooking(TripBookingDto tripBooking) ;
 	public TripBookingDto updateTripBooking(TripBookingDto tripBooking) ;
 	public TripBookingDto deleteTripBooking(TripBookingDto tripBooking);
-	public List<TripBooking> getAllTripsCustomer(int customerId);
+	public List<TripBooking> getAllTripsByCustomer(int customerId);
 	TripBooking calculateBill(TripBooking tripbooking);
 	public double calculateBill(int customerId);
 }
