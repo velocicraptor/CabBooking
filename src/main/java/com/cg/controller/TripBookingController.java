@@ -53,11 +53,10 @@ public class TripBookingController {
 	 		return new ResponseEntity<TripBookingDto>(service.deleteTripBooking(customerId),HttpStatus.OK);
 	     }
 	     
-	     /*
+	        /*
 	 	 * Method Name - viewAllTripsCustomer, Parameter List - customer Id, Return type
 	 	 * - ResponseEntity, object Description - view the trips of particular customer
-	 	 * provided the customer id.
-	 	 */
+	        */
 	     @GetMapping("/{customerId}")
 	 	public ResponseEntity<Object>  getAllTripsCustomer(@PathVariable ("customerId") int customerId) {
 	 		List<TripBooking> bookingList;
@@ -71,7 +70,7 @@ public class TripBookingController {
 	 		return new ResponseEntity<Object>("No Bookings found in DataBase with given ID", HttpStatus.UNAUTHORIZED);
 	 	}
 
-	     /*
+	                /*
 		 	 * Method Name - calculateBill, Parameter List - customer Id, Return type
 		 	 * - ResponseEntity, object Description - calculate of a particular customer
 		 	 */
