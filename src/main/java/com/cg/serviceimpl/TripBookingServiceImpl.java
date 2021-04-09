@@ -61,8 +61,7 @@ public class TripBookingServiceImpl {
 		/*
 		 * Method Name - getAllTripsCustomer, Parameter List - customer Id, Return type
 		 * - ResponseEntity object, Description - view the trips of particular customer
-		 * provided the customer id.
-		 */
+		*/
        public List<TripBooking> getAllTripsByCustomer(int customerId) throws TripNotFoundException {
 			List<TripBooking> trips = repo.getAllTripsByCustomer(customerId);
 			if (trips.isEmpty()) {
